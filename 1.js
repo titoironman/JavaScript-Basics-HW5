@@ -4,7 +4,7 @@
 Дан объект numbers. 
 Необходимо в консоль вывести все значения объекта, которые больше или равны 3.
 */
-
+console.log("Задание 1:");
 const numbers = {
   key1: 12,
   key2: 2,
@@ -15,4 +15,8 @@ const numbers = {
   key7: 7,
 };
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+for (const key in numbers) {
+  if (numbers[key] >= 3) {
+    console.log(key, numbers[key]);
+  }
+}
