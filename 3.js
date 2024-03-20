@@ -7,7 +7,8 @@
 выполнения метода forEach. Не нужно создавать новый массив.
 Если сложно работать с методами массива, то можно сделать и обычным циклом.
 */
-
+console.log("");
+console.log("Задание 3:");
 const products = [
   {
     id: 3,
@@ -23,4 +24,7 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+products.forEach(function (product) {
+  product.price = product.price * 0.85;
+  console.log(product.price);
+});
